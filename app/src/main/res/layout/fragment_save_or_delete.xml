@@ -84,10 +84,11 @@
 
                     <EditText
                         android:id="@+id/etTitle"
+                        android:background="@drawable/background"
+                        android:padding="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:background="@null"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginBottom="10dp"
@@ -104,7 +105,7 @@
                         android:layout_marginStart="22dp"
                         android:layout_marginEnd="22dp"
                         android:layout_marginTop="10dp"
-                        android:background="@null"
+                        android:background="@drawable/background"
                         android:fontFamily="@font/google_sans_regular"
                         android:hint="Note"
                         android:importantForAutofill="no"

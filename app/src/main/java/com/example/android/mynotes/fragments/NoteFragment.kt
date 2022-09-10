@@ -89,10 +89,10 @@ class NoteFragment : Fragment(R.layout.fragment_note) {
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                if(s.toString().isEmpty())
+                if(s.toString().isNotEmpty())
                 {
                     val text = s.toString()
-                    val query = "%$text"
+                    val query = "%$text%"
                     if(query.isNotEmpty())
                     {
                         noteActivityViewModel.searchNote(query).observe(viewLifecycleOwner)
